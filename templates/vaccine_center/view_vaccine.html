@@ -1,0 +1,38 @@
+{% extends "vaccine_center/center_home.html" %}
+{% block body %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="" method="get">
+<table width="200" border="1" class="table table-primary">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Vaccine Name</th>
+    <th scope="col">Date</th>
+    <th scope="col">Slot</th>
+    <th scope="col">Age group</th>
+    <th scope="col"> </th>
+  </tr>
+    {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>&nbsp;{{ i['vaccine_name'] }}</td>
+    <td> {{ i['date'] }}</td>
+    <td> {{ i['slot'] }}</td>
+    <td> {{ i['age_group'] }}</td>
+    <td><a href="/update_vaccine/{{ i['vaccine_id'] }}" class="btn btn-success">UPDATE</a><br><br>
+        <a href="/delete_vaccine/{{ i['vaccine_id'] }}" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">DELETE</a> </td>
+  </tr>
+    {% endfor %}
+</table>
+
+</form>
+</body>
+</html>
+{% endblock %}

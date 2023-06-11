@@ -1,0 +1,44 @@
+{% extends "vaccine_center/center_home.html" %}
+{% block body %}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="" method="post">
+<table width="416" height="113" border="1" class="table table-primary">
+
+  <tr>
+    <th scope="row">Vaccine Name</th>
+    <td><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield" value="{{ data['vaccine_name'] }}" required/></td>
+  </tr>
+  <tr>
+    <th scope="row"><p>Date</p></th>
+    <td><label for="textfield2"></label>
+      <input type="date" name="textfield2" id="textfield2" value="{{ data['date'] }}" required/></td>
+  </tr>
+  <tr>
+    <th scope="row">slot</th>
+    <td><label for="textfield3"></label>
+      <input type="text" name="textfield3" id="textfield3" value="{{ data['slot'] }}" required/></td>
+  </tr>
+  <tr>
+    <th scope="row">Age group</th>
+    <td><label for="textfield3"></label>
+      <input type="text" name="textfield4" id="textfield3" value="{{ data['age_group'] }}" required/>
+    <p><i>Age Group should be in the format of 1-4 months </i></p></td>
+  </tr>
+  <tr>
+    <th colspan="2" scope="row"><center><input type="submit" name="button" id="button" value="UPDATE" /></center></th>
+    </tr>
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

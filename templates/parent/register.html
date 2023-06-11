@@ -1,0 +1,189 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{#<form action="" method="post">#}
+{#<table width="316" border="1">#}
+{##}
+{#  <tr>#}
+{#    <th scope="row">Parent Name</th>#}
+{#    <td><label for="textfield"></label>#}
+{#      <input type="text" name="textfield" id="textfield" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">House Name</th>#}
+{#    <td><label for="textfield2"></label>#}
+{#      <input type="text" name="textfield2" id="textfield2" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Place</th>#}
+{#    <td><label for="textfield3"></label>#}
+{#      <input type="text" name="textfield3" id="textfield3" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Post</th>#}
+{#    <td><label for="textfield4"></label>#}
+{#      <input type="text" name="textfield4" id="textfield4" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Pincode</th>#}
+{#    <td><label for="number1"></label>#}
+{#      <input type="text" name="number1" id="number1" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Mobile Number</th>#}
+{#    <td><label for="number2"></label>#}
+{#      <input type="text" name="number2" id="number2" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th scope="row">Email id</th>#}
+{#    <td><label for="textfield5"></label>#}
+{#      <input type="text" name="textfield5" id="textfield5" /></td>#}
+{#  </tr>#}
+{#    <tr>#}
+{#    <th scope="row">Password</th>#}
+{#    <td><label for="textfield5"></label>#}
+{#      <input type="text" name="textfield8" id="textfield5" /></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <th colspan="2" scope="row"><input type="submit" value="REGISTER" /></th>#}
+{#    </tr>#}
+{#</table>#}
+{#</form>#}
+{#</body>#}
+{#</html>#}
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v3 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/static/reg/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/static/reg/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-3.jpg');">
+			<div class="inner">
+				<form action="" method="post">
+					<h3>Registration Form</h3>
+{#					<div class="form-group">#}
+						<div class="form-wrapper">
+							<label for="">NAME:</label>
+							<div class="form-holder">
+{#								<i class="zmdi zmdi-account-o"></i>#}
+								<input type="text" class="form-control" name="textfield" required>
+							</div>
+						</div>
+                        <div class="form-wrapper">
+							<label for="">HOUSE NAME:</label>
+							<div class="form-holder">
+{#								<i class="zmdi zmdi-account-o"></i>#}
+								<input type="text" class="form-control" name="textfield2" required>
+							</div>
+						</div>
+                        <div class="form-wrapper">
+							<label for="">PLACE:</label>
+							<div class="form-holder">
+{#								<i class="zmdi zmdi-account-o"></i>#}
+								<input type="text" class="form-control" name="textfield3" required>
+							</div>
+						</div>
+                        <div class="form-wrapper">
+							<label for="">POST:</label>
+							<div class="form-holder">
+{#								<i class="zmdi zmdi-account-o"></i>#}
+								<input type="text" class="form-control" name="textfield4" required>
+							</div>
+						</div>
+                        <div class="form-wrapper">
+							<label for="">PIN:</label>
+							<div class="form-holder">
+{#								<i class="zmdi zmdi-account-o"></i>#}
+								<input type="number" class="form-control" name="number1" required>
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">EMAIL:</label>
+							<div class="form-holder">
+{#								<i style="font-style: normal; font-size: 15px;">@</i>#}
+								<input type="email" class="form-control" name="textfield5" required>
+							</div>
+						</div>
+                        <div class="form-wrapper">
+							<label for="">PHONE:</label>
+							<div class="form-holder">
+{#								<i style="font-style: normal; font-size: 15px;">@</i>#}
+								<input type="number" class="form-control" name="number2" pattern="[6789][0123456789]{9}" required>
+							</div>
+						</div>
+{#					</div>#}
+{#					<div class="form-group">#}
+						<div class="form-wrapper">
+							<label for="">PASSWORD:</label>
+							<div class="form-holder">
+{#								<i class="zmdi zmdi-lock-outline"></i>#}
+								<input type="password" class="form-control" name="textfield8" required>
+							</div>
+						</div>
+{#						<div class="form-wrapper">#}
+{#							<label for="">Repeat Password:</label>#}
+{#							<div class="form-holder">#}
+{#								<i class="zmdi zmdi-lock-outline"></i>#}
+{#								<input type="password" class="form-control" placeholder="********">#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#					<div class="form-group">#}
+{#						<div class="form-wrapper">#}
+{#							<label for="">Country:</label>#}
+{#							<div class="form-holder select">#}
+{#								<select name="" id="" class="form-control">#}
+{#									<option value="united states">United States</option>#}
+{#									<option value="united kingdom">United Kingdom</option>#}
+{#									<option value="viet nam">Viet Nam</option>#}
+{#								</select>#}
+{#								<i class="zmdi zmdi-pin"></i>#}
+{#							</div>#}
+{#						</div>#}
+{#						<div class="form-wrapper">#}
+{#							<label for="">Gender:</label>#}
+{#							<div class="form-holder select">#}
+{#								<select name="" id="" class="form-control">#}
+{#									<option value="male">Male</option>#}
+{#									<option value="femal">Female</option>#}
+{#									<option value="other">Other</option>#}
+{#								</select>#}
+{#								<i class="zmdi zmdi-face"></i>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#					<div class="form-end">#}
+{#						<div class="checkbox">#}
+{#							<label>#}
+{#								<input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.#}
+{#								<span class="checkmark"></span>#}
+{#							</label>#}
+{#						</div>#}
+						<div class="button-holder">
+							<button>Register Now</button>
+						</div>
+
+{#					</div>#}
+				</form>
+			</div>
+		</div>
+
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

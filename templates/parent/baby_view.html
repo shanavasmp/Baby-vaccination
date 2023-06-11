@@ -1,0 +1,40 @@
+{% extends "parent/parent_home.html" %}
+{% block body %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="" method="get">
+<table width="884" border="1" class="table table-primary">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Baby Name</th>
+    <th scope="col">DOB</th>
+    <th scope="col">Gender</th>
+    <th scope="col">Weight</th>
+    <th scope="col"> </th>
+    <th scope="col"> </th>
+  </tr>
+    {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>&nbsp;{{ i['baby_name'] }}</td>
+    <td>&nbsp;{{ i['dob'] }}</td>
+    <td>&nbsp;{{ i['gender'] }}</td>
+    <td>&nbsp;{{ i['weight'] }}</td>
+    <td><p><a href="/update_baby/{{ i['baby_id'] }}" class="btn btn-success">UPDATE</a></p>
+      <p><a href="/delete_baby/{{ i['baby_id'] }}" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">DELETE</a></p></td>
+  <td><a href="/parent_view_vaccine/{{ i['baby_id'] }}" class="btn btn-behance">VIEW VACCINE</a> </td>
+  </tr>
+
+    {% endfor %}
+</table>
+</form>
+</body>
+</html>
+{% endblock %}
